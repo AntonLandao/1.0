@@ -1,14 +1,15 @@
 #include <iostream>
-
+#include <math.h>
 using namespace std;
-
-int main(void)
+int main()
 {
-	const float PI=3.14;
-	float S(0),C;
-	cout<<"C=";
-	cin>>C;
-	S=C*C/(4*PI);
-	cout<<"S="<<S;
+	double x,y,res;
+	cout<<"x=";
+	cin>>x;
+	cout<<"y=";
+	cin>>y;
+	res=pow((x+1)/(x-1),x)+18*x*y*y;
+	cout<<"res="<<res<<"\n";
+	cin.get();
 	return 0;
 }
